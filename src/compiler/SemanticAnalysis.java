@@ -216,7 +216,7 @@ public class SemanticAnalysis {
                 control2();
                 break;
             }
-            case "C3":{
+            case "C2":{
                 control3();
                 break;
             }
@@ -327,7 +327,7 @@ public class SemanticAnalysis {
             LrParser.printHs(value);
         }
         LrParser.initLrTable();
-        Scancer.input = "";
+        Scancer.input = "int a;int b;a=3;b=4;if(a==b) a=5;";
         Scancer.lexicalAnalysis();
         midCode();
         Symbol.printSt();

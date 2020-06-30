@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @Date: 2020/6/12 0012 15:25
  * 符号表
  * name 变量名 如id的值，digit的值
- * type 变量类型，若是变量名，type取integer，若是int数，type取int10
+ * type 变量类型
  * val 变量值，暂为null
  * addr 相对地址
  *
@@ -63,7 +63,6 @@ public class Symbol implements java.io.Serializable {
             System.out.printf("%s\n",mes);
         }
     }
-
 
     public String getName() {
         return name;
